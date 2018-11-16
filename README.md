@@ -59,6 +59,7 @@ npm install gulp@4.0 --save-dev
 ```bash
 npm install babel --save-dev
 npm install --save-dev gulp-babel@7 babel-core babel-preset-env
+npm install --save-dev babel-preset-es2015
 ```
 
 #### .babelrc 파일 생성
@@ -163,7 +164,7 @@ const eslint = require('gulp-eslint');
 
 ...
 
-gulp.task('js', () => {
+gulp.task('default', () => {
   gulp
     .src(PATH.SRC.JS)
     .pipe(eslint())
